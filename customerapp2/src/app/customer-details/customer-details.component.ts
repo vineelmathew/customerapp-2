@@ -30,7 +30,7 @@ export class CustomerDetailsComponent {
       },
 
       err=>{
-        console.log("isnide user details, err is "+err.message);
+        console.log("user details, err is "+err.message);
       }
 
     );
