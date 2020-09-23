@@ -28,9 +28,8 @@ public class CustomerRestController {
     @ResponseStatus(HttpStatus.CREATED)
     public CustomerDetails create(@RequestBody CustomerRequest requestData) {
         String name = requestData.getName();
-        int age = requestData.getAge();
-        double salary = requestData.getSalary();
-        Customer customer = new Customer(name,  age, salary);
+        double balance = requestData.getBalance();
+        Customer customer = new Customer(name, balance);
         customer = userService.save(customer);
         CustomerDetails response = customerUtility.userDto(customer);
         return response;

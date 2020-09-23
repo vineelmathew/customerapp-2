@@ -6,15 +6,15 @@ public class CustomerDetails {
 
     private String name;
 
-    private double salary;
+    private double balance;
     public CustomerDetails(){
 
     }
 
-    public CustomerDetails(int id, String name, double salary){
+    public CustomerDetails(int id, String name, double balance){
         this.id=id;
         this.name=name;
-        this.salary=salary;
+        this.balance = balance;
     }
 
     public int getId() {
@@ -33,12 +33,12 @@ public class CustomerDetails {
         this.name = name;
     }
 
-    public double getSalary() {
-        return salary;
+    public double getBalance() {
+        return balance;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 
 }

@@ -3,9 +3,7 @@ public class CustomerRequest {
 
     private String name;
 
-    private double salary;
-
-    private int age;
+    private double balance;
 
 
     public String getName() {
@@ -16,20 +14,12 @@ public class CustomerRequest {
         this.name = name;
     }
 
-    public double getSalary() {
-        return salary;
+    public double getBalance() {
+        return balance;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
+    public void setBalance(double balance) {
+        this.balance = balance;
     }
 
 

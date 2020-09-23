@@ -15,7 +15,7 @@ export class AddcustomerCodedrivenComponent implements OnInit {
   balanceCtrl:FormControl;
   customer: Customer;
 
-  constructor(private customerService:CustomerService,fb:FormBuilder) {
+  constructor(private customerService:CustomerService,fb:FormBuilder) {    
     this.nameCtrl=fb.control('',[Validators.minLength(4),Validators.required]);
     this.balanceCtrl=fb.control('',[Validators.required]);
     this.customerForm=fb.group({
